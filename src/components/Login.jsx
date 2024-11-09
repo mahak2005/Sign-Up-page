@@ -2,8 +2,8 @@ import React, { useEffect, useState } from "react";
 // import Image from "../assets/image.png";
 import Logo from "../assets/logo.png";
 // import GoogleSvg from "../assets/icons8-google.svg";
-// import { FaEye } from "react-icons/fa6";
-// import { FaEyeSlash } from "react-icons/fa6";
+import { FaEye } from "react-icons/fa6";
+import { FaEyeSlash } from "react-icons/fa6";
 
 const Login = () => {
   const [showPassword, setShowPassword] = useState(false);
@@ -48,7 +48,7 @@ const Login = () => {
               <input type="email" placeholder="Email" />
               <div className="pass-input-div">
                 <input type={showPassword ? "text" : "password"} placeholder="Password" />
-                {/* {showPassword ? <FaEyeSlash onClick={() => {setShowPassword(!showPassword)}} /> : <FaEye onClick={() => {setShowPassword(!showPassword)}} />} */}
+                {showPassword ? <FaEyeSlash onClick={() => {setShowPassword(!showPassword)}} /> : <FaEye onClick={() => {setShowPassword(!showPassword)}} />}
               </div>
 
               <div className="login-center-options">
